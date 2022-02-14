@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_search.xml" value="0.12083333333333333" />
+        <entry key="app/src/main/res/drawable/item_main_bottom_is_select.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/item_main_bottom_nav_find_icon.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/item_main_bottom_nav_friend_icon.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/item_main_bottom_nav_icon.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/item_main_bottom_nav_mine_icon.xml" value="0.15989583333333332" />
+        <entry key="app/src/main/res/drawable/item_main_bottom_nav_msg_icon.xml" value="0.21851851851851853" />
+        <entry key="app/src/main/res/drawable/item_test_badge.xml" value="0.16979166666666667" />
+        <entry key="app/src/main/res/layout/activity_code.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_login_account.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/fragment_find.xml" value="0.1046875" />
+        <entry key="app/src/main/res/layout/fragment_friend.xml" value="0.1046875" />
+        <entry key="app/src/main/res/layout/fragment_mine.xml" value="0.1046875" />
+        <entry key="app/src/main/res/layout/fragment_msg.xml" value="0.1046875" />
+        <entry key="app/src/main/res/layout/layout_friend_head_top.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/main_activity.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/main_fragment.xml" value="0.213768115942029" />
+        <entry key="app/src/main/res/layout/one_key_login_fragment.xml" value="0.245018115942029" />
+        <entry key="app/src/main/res/layout/phone_code.xml" value="0.1046875" />
+        <entry key="app/src/main/res/layout/splash_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/menu-v26/bottom_nav.xml" value="0.2734375" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

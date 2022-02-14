@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mine_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/mainMsg"
+        android:name="cn.dfordog.basemvvm.ui.main.MainFragment"
+        android:label="消息页"
+        tools:layout="@layout/main_fragment" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="cn.dfordog.basemvvm.ui.splash.SplashFragment"
+        android:label="启动页"
+        tools:layout="@layout/splash_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_oneKeyLoginFragment"
+            app:destination="@id/oneKeyLoginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_mainFragment"
+            app:destination="@id/mainMsg" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneKeyLoginFragment"
+        android:name="cn.dfordog.basemvvm.ui.login.OneKeyLoginFragment"
+        android:label="手机号一键登录"
+        tools:layout="@layout/one_key_login_fragment"
+        />
+    <fragment
+        android:id="@+id/mainFriend"
+        android:name="cn.dfordog.basemvvm.ui.friend.FriendFragment"
+        android:label="联系人"
+        tools:layout="@layout/fragment_friend"
+        />
+    <fragment
+        android:id="@+id/mainFind"
+        android:name="cn.dfordog.basemvvm.ui.find.FindFragment"
+        android:label="发现"
+        tools:layout="@layout/fragment_find"
+        />
+    <fragment
+        android:id="@+id/mainMine"
+        android:name="cn.dfordog.basemvvm.ui.mine.MineFragment"
+        android:label="我的"
+        tools:layout="@layout/fragment_mine"
+        />
+</navigation>

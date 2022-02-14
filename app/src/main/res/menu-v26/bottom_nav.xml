@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainMsg"
+        android:icon="@drawable/item_main_bottom_nav_msg_icon"
+        android:iconTint="@color/black"
+        android:title="消息"
+        />
+
+    <item
+        android:id="@+id/mainFriend"
+        android:title="朋友"
+        android:icon="@drawable/item_main_bottom_nav_friend_icon"
+        />
+
+    <item
+        android:id="@+id/mainFind"
+        android:title="发现"
+        android:icon="@drawable/item_main_bottom_nav_find_icon"
+        />
+
+    <item
+        android:id="@+id/mainMine"
+        android:title="我的"
+        android:icon="@drawable/item_main_bottom_nav_mine_icon"
+        />
+</menu>

@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    api 'androidx.core:core-ktx:1.7.0'
+    api 'androidx.appcompat:appcompat:1.3.1'
+    api 'com.google.android.material:material:1.4.0'
+    api 'junit:junit:4.+'
+    api 'androidx.test.ext:junit:1.1.3'
+    api 'androidx.test.espresso:espresso-core:3.4.0'
+
+    def lifecycle_version = "2.4.0"
+
+    // ViewModel
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    api "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+    def activity_version = "1.4.0"
+    api "androidx.activity:activity-ktx:$activity_version"
+    def fragment_version = "1.4.0"
+    api "androidx.fragment:fragment-ktx:$fragment_version"
+
+
+
+    def nav_version = "2.3.5"
+    // Kotlin
+    api("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    api("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    //Retrofit
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp
+    api group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.9.1'
+
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    api group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+
+    /*Gson数据解析器*/
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    /*OkHttp打印*/
+    api 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+
+}
