@@ -17,6 +17,21 @@ class Constant {
          */
         const val CODE_IS_NOT_EMPTY = "验证码不能为空!"
 
+        /**
+         * 网络请求使用的token
+         */
+        const val TOKEN = "token"
+
+        /**
+         * 创建SP
+         */
+        const val SAVE_USER_INFO_TO_SP = "saveUserInfo"
+
+        /**
+         * 将token存入sp
+         */
+        const val SAVE_USER_TOKEN_TO_SP = "saveUserToken"
+
     }
 
 }

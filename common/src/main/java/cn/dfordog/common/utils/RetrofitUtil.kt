@@ -1,6 +1,7 @@
 package cn.dfordog.common.utils
 
 import cn.dfordog.common.BuildConfig
+import cn.dfordog.common.utils.Constant.Companion.TOKEN
 import okhttp3.Headers
 import okhttp3.HttpUrl
 import okhttp3.OkHttpClient
@@ -49,12 +50,12 @@ object RetrofitUtil {
                 val modifiedUrl: HttpUrl =
                     originalRequest.url.newBuilder() // Provide your custom parameter here
                         /*将token添加到公共参数中*/
-                        .addQueryParameter("token", "")
+                        .addQueryParameter(TOKEN, "")
                         .build()
                 request = originalRequest.newBuilder()
                     .url(modifiedUrl)
                     /*将token添加到请求头中*/
-//                    .header("token","")
+//                    .header(TOKEN,"")
                     .build()
                 it.proceed(request)
             }
@@ -68,7 +69,7 @@ object RetrofitUtil {
 
 
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("http://yuelian.sd.cloudjp.cn/")
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

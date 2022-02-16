@@ -5,7 +5,9 @@ import android.widget.LinearLayout
 import cn.dfordog.basemvvm.R
 import cn.dfordog.basemvvm.databinding.MainFragmentBinding
 import cn.dfordog.basemvvm.ui.main.viewmodel.MainViewModel
+import cn.dfordog.common.base.BaseDUserInfoBean
 import cn.dfordog.common.base.BasicDFragment
+import cn.dfordog.common.utils.LoginUtil
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 /**
@@ -23,6 +25,7 @@ class MainFragment : BasicDFragment<MainFragmentBinding, MainViewModel>() {
 
         /*设置头部颜色*/
         requireActivity().findViewById<LinearLayout>(R.id.mainTopLL).setBackgroundColor(resources.getColor(R.color.main_color))
+
     }
 
     override fun initData() {
